@@ -16,7 +16,7 @@ while (opcao == 'sim') {
         listaDeCompras[categoria].push(comida);
     else{
         alert('Categoria não encontrada. Adicionado a categoria "outros"');
-        listaDeCompras['outros'].push(comida);
+        listaDeCompras['Outros'].push(comida);
     }
 
     opcao = prompt('Você deseja adicionar uma comida na sua lista de compras? (sim, não)');
