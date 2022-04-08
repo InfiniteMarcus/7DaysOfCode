@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Inter";
+    display: swap;
     src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
 }
 
@@ -8,6 +9,9 @@ body {
     font-weight: 500;
 }
 
+/* 
+    Navbar
+*/
 .navbar-style {
     margin-top: 28px;
     margin-left: 110px;
@@ -93,4 +97,35 @@ body {
 
 .button-active:hover {
     background-color: #621919;
+}
+
+/*
+    Header
+*/
+
+.header-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 96px;
+}
+
+.header-subheader {
+    color: #8E2424;
+    font-weight: bold;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.header-description {
+    color: #667085;
+    font-size: 20px;
+    max-width: 55%;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
 }
