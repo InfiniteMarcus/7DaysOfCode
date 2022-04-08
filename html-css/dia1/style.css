@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+body {
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.header-style {
+    margin-top: 28px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.nav-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: #3A404E;
+    font-weight: 600;
+}
+
+.nav-logo {
+    height: 27px;
+}
+
+.nav-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+}
+
+.nav-content li {
+    float: left;
+    color: #667085;
+    font-weight: 500;
+}
+
+.nav-content li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+.nav-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.button-inactive, .button-active {
+    margin: none;
+    font-size: 16px;
+    padding: 10px 18px;
+    border: none;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.button-inactive {
+    color: #667085;
+    background-color: #fff;
+}
+
+.button-inactive:hover {
+    text-decoration: underline;
+}
+
+.button-active {
+    color: #fff;
+    background-color: #8E2424;
+}
+
+.button-active:hover {
+    background-color: #621919;
+}
