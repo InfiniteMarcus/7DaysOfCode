@@ -20,17 +20,20 @@ window.addEventListener('load', () => {
 
     const pessoas = JSON.parse(localStorage.getItem('pessoas'));
 
-    if(pessoas){
-
+    if(pessoas && pessoas.length > 0) {
         const table = document.querySelector('.data-table');
 
         table.style.display = 'block';
 
         pessoas.forEach(pessoa => {
-            tableContent.innerHTML += `<tr><td class="data-content">${pessoa.name}</td><td class="data-content">${pessoa.birthDate}</td><td><button class="edit-button" onClick="edit(this)">Editar</button</td></tr>`;
+            tableContent.innerHTML += `<tr><td class="data-content">${pessoa.name}</td><td class="data-content">${pessoa.birthDate}</td><td><button class="edit-button" onClick="edit(this)">Editar</button</td><td><button class="remove-button" onClick="remove(this)">Remover</button</td></tr>`;
         });
     }
 });
+
+function getIndexOfObject (array, keyField1, keyField2, key) {
+    return array.map(function(e) { return `${e[keyField1]}${e[keyField2]}`; }).indexOf(key);
+}
 
 function edit (element) {
     const row = element.parentNode.parentNode;
@@ -45,6 +48,20 @@ function edit (element) {
 
     const pessoas = JSON.parse(localStorage.getItem('pessoas')) || [];
     
+    pessoas.splice(getIndexOfObject(pessoas, 'name', 'birthDate', `${name}${birthday}`), 1);
+
+    localStorage.setItem('pessoas', JSON.stringify(pessoas));
+}
+
+function remove (element) {
+    const row = element.parentNode.parentNode;
+    const name = row.childNodes[0].innerHTML;
+    const birthday = row.childNodes[1].innerHTML;
+
+    row.remove();
+
+    const pessoas = JSON.parse(localStorage.getItem('pessoas')) || [];
+
     pessoas.splice(getIndexOfObject(pessoas, 'name', 'birthDate', `${name}${birthday}`), 1);
 
     localStorage.setItem('pessoas', JSON.stringify(pessoas));
