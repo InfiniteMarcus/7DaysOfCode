@@ -5,4 +5,5 @@ Repositório com as minhas soluções para os desafios do [#7DaysOfCode](https:/
 ## Categorias dos desafios
 
 * HTML e CSS (com Giovanna Moeller)
+* Javascript e DOM (com Matheus Castiglioni)
 * Lógica com JavaScript (com Rafa Ballerini)
