@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class dia1 {
+public class dia2 {
 
     private static String[] parseJsonMovies(String json) {
         return json.substring(json.indexOf("[") + 1, json.indexOf("]")-1).replace("{", "").split("},");
