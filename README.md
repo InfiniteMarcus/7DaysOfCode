@@ -7,5 +7,6 @@ Resolução do desafio 7 de Javascript e DOM: https://infinitemarcus.github.io/7
 ## Categorias dos desafios
 
 * HTML e CSS (com Giovanna Moeller)
+* Java (com Paulo Silveira)
 * Javascript e DOM (com Matheus Castiglioni)
 * Lógica com JavaScript (com Rafa Ballerini)
