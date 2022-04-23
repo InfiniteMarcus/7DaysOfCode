@@ -46,7 +46,7 @@ public class dia3 {
 
     public static void main (String args[]) {
         try {
-            String apiKey = "k_uhhkcun7";
+            String apiKey = "";
             HttpClient client = HttpClient.newHttpClient();
 
             HttpRequest request = HttpRequest
